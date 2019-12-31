@@ -2,6 +2,13 @@
 # wm independent hotkeys
 #
 
+#reload config
+super + Escape
+	pkill -USER1 -x sxhkd
+
+#launch browser
+super + f
+	firefox
 
 # quit/restart bspwm
 super + alt + {q,r}
