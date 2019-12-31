@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #hotkey controller
-sxhkd &
+sxhkd -c $HOME/.config/bspwm/sxhkd/sxhkdrc &
 
 #will need to change if monitor setup changes
 bspc monitor HDMI-0 -d I II III IV V
