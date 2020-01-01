@@ -16,12 +16,17 @@ bspc config top_padding      28
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config focus_follows_pointer true
+#this features implementation inhibits interacting with the desktop
+#bspc config focus_follows_pointer true
 
 bspc rule -a Screenkey manage=off
 
 # ignore plasma stuff and krunner
 bspc rule -a plasmashell state=floating border=off layer=normal
 bspc rule -a krunner state=floating border=off 
+
+
+# custom rules for specific applications
+bspc rule -a code desktop=^1
 
 

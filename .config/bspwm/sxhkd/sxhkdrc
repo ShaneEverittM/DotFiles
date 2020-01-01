@@ -1,7 +1,7 @@
+#!/usr/bin/sh
 #
 # wm independent hotkeys
 #
-
 #reload config
 super + Escape
 	pkill -USER1 -x sxhkd
