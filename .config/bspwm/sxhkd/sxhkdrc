@@ -2,13 +2,12 @@
 #
 # wm independent hotkeys
 #
+
+#Utilities
+
 #reload config
 super + Escape
 	pkill -USER1 -x sxhkd
-
-#launch browser
-super + f
-	firefox
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -17,6 +16,18 @@ super + alt + {q,r}
 # close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
+
+#Applications
+
+#launch browser
+super + f
+	firefox
+
+#lauch code
+super + c
+	code
+
+#Modes
 
 # alternate between the tiled and monocle layout
 super + m
