@@ -20,13 +20,20 @@ super + {_,shift + }w
 #Applications
 
 #launch browser
-super + f
+super + b
 	firefox
 
-#lauch code
-super + c
+#launch code
+super + e
 	code
 
+#launch system settings
+super + s
+	systemsettings5	
+
+#launch dolphin
+super + d
+	dolphin
 #Modes
 
 # alternate between the tiled and monocle layout
