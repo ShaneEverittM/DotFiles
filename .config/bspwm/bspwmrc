@@ -4,8 +4,7 @@
 sxhkd -c $HOME/.config/bspwm/sxhkd/sxhkdrc &
 
 #will need to change if monitor setup changes
-bspc monitor HDMI-0 -d I II III IV V
-bspc monitor DVI-I-1 -d I II III IV V
+bspc monitor -d I II III IV V
 
 
 bspc config border_width         2

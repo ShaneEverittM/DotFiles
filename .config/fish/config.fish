@@ -1,7 +1,8 @@
 #My fish shell configuration
 
-alias config="/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME/"
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/"
 
-neofetch --os_arch off --kernel_shorthand on
+#not as useful on a small laptop screen
+#neofetch --os_arch off --kernel_shorthand on
 
 
