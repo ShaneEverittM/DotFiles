@@ -28,6 +28,11 @@ bspc rule -a krunner state=floating border=off
 bspc rule -a yakuake layer=above state=floating
 
 
+bspc config pointer_modifier mod1
+bspc config pointer_action1 resize_side
+bspc config pointer_action1 resize_corner
+bspc config pointer_action3 move
+
 # custom rules for specific applications
 
 
