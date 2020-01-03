@@ -10,8 +10,8 @@ super + Escape
 	pkill -USER1 -x sxhkd
 
 # quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+super + alt + Escape
+	bspc wm -r
 
 # close and kill
 super + {_,shift + }w
@@ -28,8 +28,8 @@ super + e
 	code
 
 #launch system settings
-super + s
-	systemsettings5	
+#super + s
+#	systemsettings5	
 
 #launch dolphin
 super + d
