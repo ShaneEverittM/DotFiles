@@ -28,15 +28,17 @@ bspc rule -a plasmashell state=floating border=off layer=normal
 bspc rule -a krunner state=floating border=off layer=above
 bspc rule -a yakuake layer=above state=floating
 
-
+#kwin style resizing and moving for floating windows
 bspc config pointer_modifier mod1
 bspc config pointer_action1 resize_side
 bspc config pointer_action1 resize_corner
 bspc config pointer_action3 move
+
+#click to focus
 bspc config click_to_focus true
 
 
 
 # custom rules for specific applications
-
-bspc rule -a glava border=off state=floating
+bspc rule -a "Spotify Premium" desktop=^3
+bspc rule -a Firefox desktop=^1

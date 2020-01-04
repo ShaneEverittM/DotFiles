@@ -31,6 +31,9 @@ super + e
 #super + s
 #	systemsettings5	
 
+#launch spotify, move it after
+super + q
+	~/.config/bspwm/sxhkd/spotifysucks.sh
 #launch dolphin
 super + d
 	dolphin
