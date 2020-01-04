@@ -40,5 +40,4 @@ bspc config click_to_focus true
 
 
 # custom rules for specific applications
-bspc rule -a "Spotify Premium" desktop=^3
-bspc rule -a Firefox desktop=^1
+#Imagine theres a rule here that says spotify opens on HDMI desktop III
