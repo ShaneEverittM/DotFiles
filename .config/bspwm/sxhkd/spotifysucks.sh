@@ -1,5 +1,5 @@
 #!/bin/bash
 spotify &
-sleep 1
+sleep .5
 wmctrl -r "Spotify Premium" -t 7
 exit
