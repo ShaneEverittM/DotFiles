@@ -1,6 +1,6 @@
 #My fish shell configuration
 
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME/"
+alias config="/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME/"
 
 neofetch --os_arch off --kernel_shorthand on
 
