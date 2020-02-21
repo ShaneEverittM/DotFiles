@@ -1,4 +1,4 @@
-" Powerline plugin location
+" Powerline plugin location (run time path)
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
 
