@@ -4,4 +4,7 @@ alias config="/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME/"
 
 neofetch --os_arch off --kernel_shorthand on
 
+function fish_greeting
+end
+
 
