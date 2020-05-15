@@ -9,13 +9,6 @@
 #####################
 # user defined verbs:
 
-# If $EDITOR isn't set on your computer, you should either set it using
-#  something similar to
-#   export EDITOR=/usr/bin/nvim
-#  or just replace it with your editor of choice in the 'execution'
-#  pattern.
-# Example:
-#  execution = "/usr/bin/nvim {file}"
 [[verbs]]
 invocation = "edit"
 key = "ctrl-e"
@@ -30,18 +23,12 @@ execution = ":quit"
 invocation = "create {subpath}"
 execution = "/usr/bin/vim {directory}/{subpath}"
 
-# If $PAGER isn't set on your computer, you should either set it
-#  or just replace it with your viewer of choice in the 'execution'
-#  pattern.
-# Example:
-#  execution = "less {file}"
 [[verbs]]
 name = "view"
 invocation = "view"
 execution = "$PAGER {file}"
 
 
-default_flags = "gh"
 #####################
 # Skin
 
