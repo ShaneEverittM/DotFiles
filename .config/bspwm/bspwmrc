@@ -9,7 +9,7 @@ sxhkd -c $HOME/.config/bspwm/sxhkd/sxhkdrc &
 
 #will need to change if monitor setup changes
 bspc monitor HDMI-2 -d dev fsh 3 4 5 
-bspc monitor HDMI-1 -d ref doc dis 4 5 
+bspc monitor HDMI-1 -d ref doc dis tod spt
 
 ########################
 # Visual Configuration #
