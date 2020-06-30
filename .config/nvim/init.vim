@@ -42,7 +42,7 @@ if exists('g:vscode')
 
     " Simulate hovering with the mouse
     nnoremap <silent> <leader>gh  :<C-u>call VSCodeNotify('editor.action.showDefinitionPreviewHover', { 'query': expand('<cword>')})<CR>
-
+    
     " Easy commit and push
     nnoremap <silent> <leader>gc  :<C-u>call VSCodeNotify('git.commitAll')<CR>
     nnoremap <silent> <leader>gp  :<C-u>call VSCodeNotify('git.push')<CR>
