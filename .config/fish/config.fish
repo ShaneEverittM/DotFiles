@@ -19,6 +19,8 @@ else
 	abbr -a lll 'ls -la'
 end
 
+abbr -a ewm 'nvim /home/shane/.config/bspwm/bspwmrc'
+
 if command -v broot > /dev/null
 	abbr -a brh 'br -h'
 end
