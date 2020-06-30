@@ -1,8 +1,11 @@
 #My fish shell configuration
 
-alias config="/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME/"
+alias cfg="/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME/"
 
-set -U fish_user_paths /usr/local/bin /usr/bin /bin
+#export PATH="$HOME/.cargo/bin:$PATH"
+
+set -U fish_user_paths $HOME/.cargo/bin /usr/local/bin /usr/bin /bin 
+
 
 if command -v exa > /dev/null
 	abbr -a l 'exa'
