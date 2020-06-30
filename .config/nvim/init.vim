@@ -1,11 +1,24 @@
+" -------------------------------------------------------------------------- "
+"      My config for use as a backend for VSCode and system configuration.   "
+" -------------------------------------------------------------------------- "
+
 " context free things
 set shell=/bin/bash
+
+" much more convenient leader
 let mapleader = "\<Space>"
+
 " Jump to start and end of line using the home row keys
 map H ^
 map L $
+
 " Quick-save
 nmap <leader>w :w<CR>
+
+" Quickly insert an empty new line without entering insert mode
+" (uses mark o to return to the previous cursor column)
+nnoremap <Leader>O moO<Esc>`o
+nnoremap <Leader>o moo<Esc>`o
 
 " No arrow keys --- force yourself to use the home row
 nnoremap <up> <nop>
@@ -14,25 +27,33 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-map \ <Plug>(easymotion-prefix)
+
 " set the runtime path to include Vundle and initialize
 set nocompatible              " be iMproved, required
 filetype off                  " required
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'asvetliakov/vim-easymotion'
 
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+" This config file controls the neovim backend I use for VSCode, and this
+" section is just for that.
 if exists('g:vscode')
-    " vscode stuff
+
+    " Simulate hovering with the mouse
     nnoremap <silent> <leader>gh  :<C-u>call VSCodeNotify('editor.action.showDefinitionPreviewHover', { 'query': expand('<cword>')})<CR>
+
+    " Easy commit and push
+    nnoremap <silent> <leader>gc  :<C-u>call VSCodeNotify('git.commitAll')<CR>
+    nnoremap <silent> <leader>gp  :<C-u>call VSCodeNotify('git.push')<CR>
+
 else
 
     Plugin 'itchyny/lightline.vim'
     Plugin 'dag/vim-fish'
+    
     filetype plugin indent on
-    " =============================================================================
-    " # GUI settings
-    " =============================================================================
+
     set relativenumber
     set number
     set mouse=a
@@ -40,31 +61,5 @@ else
     set noshowmode
     set shortmess+=F
 
-
-    " Ctrl+c and Ctrl+j as Esc
-    " Ctrl-j is a little awkward unfortunately:
-    " https://github.com/neovim/neovim/issues/5916
-    " So we also map Ctrl+k
-    inoremap <C-j> <Esc>
-
-    nnoremap <C-k> <Esc>
-    inoremap <C-k> <Esc>
-    vnoremap <C-k> <Esc>
-    snoremap <C-k> <Esc>
-    xnoremap <C-k> <Esc>
-    cnoremap <C-k> <Esc>
-    onoremap <C-k> <Esc>
-    lnoremap <C-k> <Esc>
-    tnoremap <C-k> <Esc>
-
-    nnoremap <C-c> <Esc>
-    inoremap <C-c> <Esc>
-    vnoremap <C-c> <Esc>
-    snoremap <C-c> <Esc>
-    xnoremap <C-c> <Esc>
-    cnoremap <C-c> <Esc>
-    onoremap <C-c> <Esc>
-    lnoremap <C-c> <Esc>
-    tnoremap <C-c> <Esc>
 endif
 call vundle#end()
