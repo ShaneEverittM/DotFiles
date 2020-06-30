@@ -14,3 +14,8 @@ statusbar_progress = "green"
 statusbar_bg = "green"
 cmdline = "light white"
 cmdline_bg = "black"
+
+[saved_state]
+volume = 75
+repeate = "playlist"
+shuffle = true
