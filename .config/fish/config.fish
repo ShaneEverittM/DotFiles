@@ -17,7 +17,7 @@ else
 end
 
 abbr -a ewm 'nvim /home/shane/.config/bspwm/bspwmrc'
-
+abbr -a efsh 'nvim /home/shane/.config/fish/config.fish'
 if command -v broot > /dev/null
 	abbr -a brh 'br -h'
 end
