@@ -40,8 +40,11 @@ bspc rule -a plasmashell state=floating border=off layer=normal
 bspc rule -a krunner state=floating border=off layer=above
 bspc rule -a yakuake layer=above state=floating
 
+# visualizer
+bspc rule -a GLava state=floating border=off desktop=^10 rectangle=1920x200+0+849 layer=below
+
 #kwin style resizing and moving for floating windows
-bspc config pointer_modifier mod1
+bspc config pointer_modifier mod1 w
 bspc config pointer_action1 resize_side
 bspc config pointer_action1 resize_corner
 bspc config pointer_action3 move
@@ -51,7 +54,7 @@ bspc config click_to_focus true
 
 
 
-# custom rules for specific applications
+# custom rules for specific applcations
 #Imagine theres a rule here that says spotify opens on HDMI desktop III
 
 
