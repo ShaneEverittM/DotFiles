@@ -60,14 +60,14 @@ font-2 = "Noto Color Emoji:size=11;0"
 modules-left = bspwm
 modules-right =  spotify cpu memory temperature pulseaudio date 
 
-tray-position = right
+tray-position = ${env:TRAY_POS:none}
 tray-padding = 2
 ;tray-background = #0063ff
 
 wm-restack = bspwm
 ;wm-restack = i3
 
-;override-redirect = true
+override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev

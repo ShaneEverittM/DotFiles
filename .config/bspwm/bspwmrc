@@ -4,12 +4,13 @@
 # System Configuration #
 ########################
 
+
 #hotkey controller
 sxhkd -c $HOME/.config/bspwm/sxhkd/sxhkdrc &
 
 #will need to change if monitor setup changes
-bspc monitor HDMI-2 -d dev fsh 3 4 5 
-bspc monitor HDMI-1 -d ref doc dis tod spt
+bspc monitor HDMI-2 -d 1 2 3 4 5 
+bspc monitor HDMI-1 -d 1 2 3 4 5 
 
 ########################
 # Visual Configuration #
@@ -41,7 +42,7 @@ bspc rule -a krunner state=floating border=off layer=above
 bspc rule -a yakuake layer=above state=floating
 
 # visualizer
-bspc rule -a GLava state=floating border=off desktop=^10 rectangle=1920x200+0+849 layer=below 
+bspc rule -a GLava state=floating border=off desktop=^10 rectangle=1920x200+0+860 layer=below 
 
 #kwin style resizing and moving for floating windows
 bspc config pointer_modifier mod1 w
@@ -59,4 +60,4 @@ bspc config click_to_focus true
 
 
 #polybar
-$HOME/.config/polybar/scripts/launch-polybar.sh
+#$HOME/.config/polybar/scripts/launch-polybar.sh
