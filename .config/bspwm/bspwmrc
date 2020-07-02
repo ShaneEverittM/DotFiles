@@ -59,4 +59,4 @@ bspc config click_to_focus true
 
 
 #polybar
-$HOME/.config/polybar/launch-polybar.sh
+$HOME/.config/polybar/scripts/launch-polybar.sh
