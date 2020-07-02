@@ -53,3 +53,7 @@ bspc config click_to_focus true
 
 # custom rules for specific applications
 #Imagine theres a rule here that says spotify opens on HDMI desktop III
+
+
+#polybar
+$HOME/.config/polybar/launch-polybar.sh
