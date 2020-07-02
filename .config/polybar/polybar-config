@@ -54,7 +54,8 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+;font-2 = siji:pixelsize=10;1
+font-2 = "Noto Color Emoji:size=11;0" 
 
 modules-left = bspwm
 modules-right =  spotify cpu memory temperature pulseaudio date 
@@ -80,7 +81,7 @@ cursor-scroll = ns-resize
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = " "
+format-prefix = ""
 format = <label>
 exec = python /home/shane/.config/polybar/scripts/ncspot-status.py -f '{artist}: {song}'
 format-underline = #1db954
@@ -93,7 +94,7 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
@@ -284,10 +285,10 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = Vol %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted = muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
