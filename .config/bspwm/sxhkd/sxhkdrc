@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 #
 # wm independent hotkeys
 #
@@ -27,13 +27,11 @@ super + b
 super + e
 	code
 
-#launch system settings
-#super + s
-#	systemsettings5	
 
 #launch spotify, move it after
-super + q
-	~/.config/bspwm/sxhkd/spotifysucks.sh
+#super + q
+#	~/.config/bspwm/sxhkd/spotifysucks.sh
+
 #launch dolphin
 super + d
 	dolphin
@@ -76,7 +74,7 @@ super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
-super + {_,shift + }c
+super + {_,shift + }Tab
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
@@ -97,6 +95,8 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
+super + shift + s
+	bspc node -f `xdotool search --name "ncspot"`
 
 #
 # preselect
