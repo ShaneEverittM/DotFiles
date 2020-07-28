@@ -47,6 +47,11 @@ if exists('g:vscode')
     nnoremap <silent> <leader>gc  :<C-u>call VSCodeNotify('git.commitAll')<CR>
     nnoremap <silent> <leader>gp  :<C-u>call VSCodeNotify('git.push')<CR>
 
+    " Convenient debug
+    nnoremap <silent> <leader>r   :<C-u>call VSCodeNotify('workbench.action.debug.run')<CR>
+    nnoremap <silent> <leader>s   :<C-u>call VSCodeNotify('workbench.action.debug.stop')<CR>
+    nnoremap <silent> <leader>rs  :<C-u>call VSCodeNotify('workbench.action.debug.restart')<CR>
+
 else
 
     Plugin 'itchyny/lightline.vim'
