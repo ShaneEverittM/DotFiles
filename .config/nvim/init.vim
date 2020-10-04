@@ -52,6 +52,7 @@ if exists('g:vscode')
     nnoremap <silent> <leader>s   :<C-u>call VSCodeNotify('workbench.action.debug.stop')<CR>
     nnoremap <silent> <leader>rs  :<C-u>call VSCodeNotify('workbench.action.debug.restart')<CR>
 
+    nnoremap <silent> <leader>rp  :<C-u>call VSCodeNotify('python.execInTerminal')<CR>
 else
 
     Plugin 'itchyny/lightline.vim'
