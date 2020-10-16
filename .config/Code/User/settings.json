@@ -1,0 +1,39 @@
+{
+    "workbench.colorTheme": "Noctis Minimus",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "window.zoomLevel": 2,
+    "terminal.integrated.cursorStyle": "line",
+    // "python.jediEnabled": false,
+    "python.pythonPath": "/usr/bin/python3",
+    "git.confirmSync": false,
+    "editor.lineNumbers": "relative",
+    "vscode-neovim.neovimExecutablePaths.linux": "/snap/bin/nvim",
+    "vscode-neovim.mouseSelectionStartVisualMode": true,
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/shane/.config/nvim/init.vim",
+    "extensions.ignoreRecommendations": false,
+    "git.enableSmartCommit": true,
+    "workbench.enableExperiments": false,
+    "python.languageServer": "Microsoft",
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.formatOnSave": true,
+    "[shellscript]": {
+        "files.eol": "\n"
+    },
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--generated-members",
+        "GPIO.*"
+    ],
+    "workbench.iconTheme": "vscode-icons"
+}
