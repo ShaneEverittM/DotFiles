@@ -39,7 +39,7 @@ bspc config presel_feedback_color "#383838"
 bspc rule -a Screenkey manage=off
 
 # ignore plasma stuff and krunner
-bspc rule -a plasmashell state=floating border=off layer=below
+bspc rule -a plasmashell state=floating border=off layer=normal
 xdo lower -n plasmashell
 xdo lower -n plasmashell -a Desktop
 bspc rule -a krunner state=floating border=off layer=above

@@ -35,5 +35,11 @@
         "--generated-members",
         "GPIO.*"
     ],
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "ms-python.python.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
