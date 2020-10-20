@@ -40,6 +40,8 @@ bspc rule -a Screenkey manage=off
 
 # ignore plasma stuff and krunner
 bspc rule -a plasmashell state=floating border=off layer=below
+xdo lower -n plasmashell
+xdo lower -n plasmashell -a Desktop
 bspc rule -a krunner state=floating border=off layer=above
 bspc rule -a yakuake layer=above state=floating
 
