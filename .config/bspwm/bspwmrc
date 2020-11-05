@@ -34,7 +34,6 @@ bspc config presel_feedback_color "#383838"
 ########################
 #     Window Rules     #
 ########################
-
 #Ignore Screenkey
 bspc rule -a Screenkey manage=off
 
@@ -44,6 +43,9 @@ xdo lower -n plasmashell
 xdo lower -n plasmashell -a Desktop
 bspc rule -a krunner state=floating border=off layer=above
 bspc rule -a yakuake layer=above state=floating
+
+
+bspc rule -a Alacritty-Terminal state=floating center=true
 
 # visualizer
 bspc rule -a GLava state=floating border=off desktop=^10 rectangle=1920x200+0+1208 layer=below
@@ -63,3 +65,7 @@ bspc config pointer_action3 move
 
 #click to focus
 bspc config click_to_focus true
+
+
+#misc startup
+wmname LG3D

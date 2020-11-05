@@ -1,5 +1,5 @@
 " -------------------------------------------------------------------------- "
-"      My config for use as a backend for VSCode and system configuration.   "
+"  " My config for use as a backend for VSCode and system configuration."    "
 " -------------------------------------------------------------------------- "
 
 " context free things
@@ -59,15 +59,30 @@ else
 
     Plugin 'itchyny/lightline.vim'
     Plugin 'dag/vim-fish'
+    Plugin 'neoclide/coc.nvim', {'branch': 'release'}
     
     filetype plugin indent on
+
+
+
+    " use <tab> for trigger completion and navigate to the next complete item
+    function! s:check_back_space() abort
+	let col = col('.') - 1
+    	return !col || getline('.')[col - 1]  =~ '\s'
+    endfunction
+
+    inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
 
     set relativenumber
     set number
     set mouse=a
     syntax on
     set noshowmode
-    set shortmess+=F
-
+	set shortmess+=F
+    set tabstop=4
+	
 endif
 call vundle#end()

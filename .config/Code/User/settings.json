@@ -23,7 +23,7 @@
     "extensions.ignoreRecommendations": false,
     "git.enableSmartCommit": true,
     "workbench.enableExperiments": false,
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
     "todo-tree.tree.showScanModeButton": false,
     "editor.formatOnSave": true,
     "[shellscript]": {
@@ -36,10 +36,5 @@
         "GPIO.*"
     ],
     "workbench.iconTheme": "vscode-icons",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "ms-python.python.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ]
+    "workbench.editorAssociations": []
 }
