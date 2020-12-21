@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# This script is for when you want to write a rule that depends on runtime information about a window.
+# Every window that is spawned is triggers this script by setting:
+# 	bspc config external_rules_command="/path/to/this/file"
+# When this script is ran, bspwm sends the wid, and the two parts of the wm_class, the class and the instance.
+# Any bspc rule flags echo'd will be applied to the window that just opened.
+
+wid=$1
+class=$2
+instance=$3
+
+if [ "$class" = "jetbrains-clion" ]
+then
+		wm_name=$(xdotool getwindowname "$wid")
+		if [ "$wm_name" = "win0" ] || [ "$wm_name" = "Welcome to CLion" ]
+		then
+				echo "state=floating center=true"
+		fi
+
+fi
+
