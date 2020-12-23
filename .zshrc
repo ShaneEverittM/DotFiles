@@ -98,3 +98,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dot="git --git-dir=$HOME/.dotgit/ --work-tree=$HOME/"
+alias vim="nvim"
