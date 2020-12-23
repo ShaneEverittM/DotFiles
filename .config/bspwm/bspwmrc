@@ -4,12 +4,6 @@
 # System Configuration #
 ########################
 
-
-#hotkey controller
-sxhkd -c $HOME/.config/bspwm/sxhkd/sxhkdrc &
-
-ulauncher --hide-window --no-window-shadow &
-
 #will need to change if monitor setup changes
 bspc monitor DP-1 -d 1 2 3 4 5
 bspc monitor HDMI-0 -d 1 2 3 4 5
@@ -46,7 +40,7 @@ xdo lower -n plasmashell -a Desktop
 bspc rule -a krunner state=floating border=off layer=above center=true
 bspc rule -a yakuake layer=above state=floating
 
-bspc rule -a ulauncher focus=on
+bspc rule -a ulauncher focus=on border=off
 
 bspc rule -a Alacritty-Terminal state=floating center=true
 
@@ -70,8 +64,20 @@ bspc config pointer_action3 move
 #click to focus
 bspc config click_to_focus true
 
+bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
 
 #misc startup
 wmname LG3D
 
-bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
+
+#launch things that need these rules
+
+#visualizer
+glava &
+
+#app launcher
+ulauncher --hide-window --no-window-shadow &
+
+#hotkey controller
+sxhkd -c $HOME/.config/bspwm/sxhkd/sxhkdrc &
+
