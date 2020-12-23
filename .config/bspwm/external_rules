@@ -10,13 +10,15 @@ wid=$1
 class=$2
 instance=$3
 
-if [ "$class" = "jetbrains-clion" ]
+if [ "$class" = "jetbrains-clion" ] || [ "$class" = "jetbrains-pycharm-ce" ]
 then
 		wm_name=$(xdotool getwindowname "$wid")
-		if [ "$wm_name" = "win0" ] || [ "$wm_name" = "Welcome to CLion" ]
+		if [ "$wm_name" = "win0" ] || [ "$wm_name" = "Welcome to CLion" ] || [ "$wm_name" = "Welcome to PyCharm" ]
 		then
 				echo "state=floating center=true"
 		fi
 
 fi
 
+
+# Here I could do the thing I wanted where the first window to open on a monitor is centered, but subsequent ones tile.
