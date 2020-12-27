@@ -11,7 +11,7 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "terminal.integrated.cursorStyle": "line",
     // "python.jediEnabled": false,
     "python.pythonPath": "/usr/bin/python3",
